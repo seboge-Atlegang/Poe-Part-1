@@ -51,28 +51,24 @@ namespace Poe_Part_1
             Thread.Sleep(1000);
         }
 
-
+        // the ascii art is displayed when the program starts
         static void DisplayAsciiArt()
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(@"
-   _____      _               
-  / ____|    | |              
- | |    _   _| |__   ___ _ __ 
- | |   | | | | '_ \ / _ \ '__|
- | |___| |_| | |_) |  __/ |   
-  \_____\__, |_.__/ \___|_|   
-         __/ |                
-        |___/                 
-   _________________________
-  |                         |
-  |  [○]   CYBERSECURITY  [○] |
-  |        PROTECTOR        |
-  |_________________________|
-       \__|_____|__/
-          |  |  |
-          |  |  |
-         _|__|__|_
+   _____              _    _____           _    
+  / ____|            | |  / ____|         | |   
+ | (___   _ __   ___ | |_| (___   ___  ___| | __
+  \___ \ | '_ \ / _ \| __|\___ \ / _ \/ __| |/ /
+  ____) || | | | (_) | |_ ____) |  __/ (__|   < 
+ |_____/ |_| |_|\___/ \__|_____/ \___|\___|_|\_\
+                                                
+  _____                            _            
+ / ____|                          | |           
+| |     ___  _ __  _ __   ___  ___| |_ ___ _ __ 
+| |    / _ \| '_ \| '_ \ / _ \/ __| __/ _ \ '__|
+| |___| (_) | | | | | | |  __/\__ \ ||  __/ |   
+ \_____\___/|_| |_|_| |_|\___||___/\__\___|_|   
 ");
             Console.ResetColor();
             Console.WriteLine();
@@ -193,7 +189,7 @@ namespace Poe_Part_1
                 }
 
                 // Default response for unknown queries
-                return "I didn't quite understand that. I can help with:\n- Password safety\n- Phishing emails\n- Safe browsing\nType 'help' for more options.";
+                 return "I didn't quite understand that. I can help with:\n- Password safety\n- Phishing emails\n- Safe browsing\nType 'help' for more options.";
             }
 
             static void DisplayHelp()
@@ -214,8 +210,8 @@ namespace Poe_Part_1
                 Console.ResetColor();
                 Console.WriteLine();
             }
-
-            static void TypeWriterEffect(string text, ConsoleColor color)
+        /// Function to create a typing effect for text
+        static void TypeWriterEffect(string text, ConsoleColor color)
             {
                 Console.ForegroundColor = color;
                 foreach (char c in text)
@@ -226,8 +222,8 @@ namespace Poe_Part_1
                 Console.WriteLine();
                 Console.ResetColor();
             }
-
-            static void PrintWarning(string message)
+        /// Function to print warning messages in red
+        static void PrintWarning(string message)
             {
                 Console.ForegroundColor = warningColor;
                 Console.WriteLine(message);
