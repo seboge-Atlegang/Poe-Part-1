@@ -144,11 +144,11 @@ namespace Poe_Part_1
             static string GetResponse(string input, string userName)
             {
                 // Basic greetings
-                if (input.Contains("hello") || input.Contains("hi"))
+                if (input.Contains("Hello") || input.Contains("hi"))
                 {
                     return $"Hello {userName}! How can I help you with cybersecurity today?";
                 }
-                if (input.Contains("how are you"))
+                if (input.Contains("How are you"))
                 {
                     return "I'm a bot, so I don't have feelings, but I'm ready to help you with cybersecurity!";
                 }
@@ -189,7 +189,7 @@ namespace Poe_Part_1
                 }
 
                 // Default response for unknown queries
-                 return "I didn't quite understand that. I can help with:\n- Password safety\n- Phishing emails\n- Safe browsing\nType 'help' for more options.";
+                 return "I didn't quite understand that. I can help with:\n- Password safety\n- Phishing emails\n- Safe browsing\n-Recognizing suspicious links\nType 'help' for more options.";
             }
 
             static void DisplayHelp()
