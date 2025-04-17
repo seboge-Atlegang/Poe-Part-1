@@ -16,7 +16,7 @@ namespace Poe_Part_1
         private static ConsoleColor infoColor = ConsoleColor.Blue;
         static void Main(string[] args)
         {
-            // Initialize the chatbot
+            // Initialize the ai chatbot
             InitializeChatbot();
 
             // used to get the users name and reuse it
